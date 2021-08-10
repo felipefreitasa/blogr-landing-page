@@ -1,0 +1,103 @@
+.navbar {
+   background: linear-gradient(90deg, #ff896f, #ff4558);
+   position: fixed;
+   top: 0;
+   width: 100vw;
+   height: 60px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   color: #fff;
+   font-family: "Ubuntu", sans-serif;
+   font-weight: 500;
+   z-index: 10;
+
+   @media (min-width: 0px){
+      padding: 0 20px;
+
+   }
+   @media (min-width: 900px){
+      padding: 0 50px;
+
+   }
+
+   nav ul {
+      display: flex;
+      list-style: none;
+
+      > li {
+         margin: 0 10px;
+         cursor: pointer;
+      }
+   }
+
+   .navbar-nav {
+      width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+
+      > img {
+         margin-right: 15px;
+         width: 80px;
+      }
+   }
+
+   .navbar-buttons {
+      @media (min-width: 0px){
+         display: none;
+      }
+      @media (min-width: 900px){
+         display: flex;
+      }
+
+      > button {
+         font-family: "Ubuntu", sans-serif;
+         font-weight: 500;
+         border: 0;
+         margin: 0 10px;
+         background: 0;
+         cursor: pointer;
+
+         &:nth-child(1) {
+            color: #fff;
+         }
+
+         &:nth-child(2) {
+            color: #ff4558;
+            background-color: #fff;
+            padding: 10px 25px;
+            border-radius: 30px;
+         }
+      }
+   }
+
+   > span {
+      @media (min-width: 0px){
+         display: flex;
+      }
+      @media (min-width: 900px){
+         display: none;
+      }
+   }
+
+  
+}
+
+.teste {
+   height: 100%;
+   margin-top: 10px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   @media (min-width: 0px){
+      display: none;
+   }
+   @media (min-width: 900px){
+      display: flex;
+   }
+}
+
+
+

@@ -1,0 +1,54 @@
+.state {
+   width: 100%;
+
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+
+   background: linear-gradient(90deg, #2e2f41, #3d4063);
+
+   color: #fff;
+
+   border-top-right-radius: 100px;
+   border-bottom-left-radius: 100px;
+
+   padding: 30px;
+
+   @media (min-width: 0px){
+      flex-direction: column;
+   }
+   @media (min-width: 900px){
+      flex-direction: row;
+   }
+
+   > img {
+      @media (min-width: 0px){
+         width: 80%;
+      }
+      @media (min-width: 900px){
+         width: 30%;
+      }
+   }
+
+   > div {
+      
+      @media (min-width: 0px){
+         width: 80%;
+         text-align: center;
+      }
+      @media (min-width: 900px){
+         width: 50%;
+         text-align: left;
+      }
+
+      > h3 {
+         font-size: 30px;
+         font-weight: 600;
+         color: #fff;
+      }
+
+      > p {
+         text-align: justify;
+      }
+   }
+}

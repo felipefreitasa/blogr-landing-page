@@ -1,0 +1,68 @@
+.free {
+   font-family: "Overpass", sans-serif;
+
+   padding: 40px;
+   width: 100%;
+
+   > h2 {
+      font-weight: 600;
+      color: #1f3f58;
+      font-size: 28px;
+
+      text-align: center;
+   }
+
+   .free-content {
+      width: 100%;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+
+      @media (min-width: 0px){
+         flex-direction: column;
+      }
+      @media (min-width: 900px){
+         flex-direction: row;
+      }
+
+      > img {
+        
+
+         @media (min-width: 0px){
+            width: 90%;
+         }
+         @media (min-width: 900px){
+            width: 40%;
+         }
+      }
+   }
+
+   .free-paragraphs {
+      
+      padding: 20px 0;
+
+      @media (min-width: 0px){
+         width: 100%;
+      }
+      @media (min-width: 900px){
+         width: 40%;
+      }
+
+      > div {
+         > h3 {
+            font-size: 22px;
+            color: #1f3f58;
+            font-weight: 600;
+         }
+
+         > p {
+            text-align: justify;
+
+            color: #a3a5a8;
+         }
+      }
+
+      
+   }
+}
